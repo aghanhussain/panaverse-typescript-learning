@@ -125,7 +125,7 @@ type FirstAndLastNames = { first: string;  last: string };
                 // const hasOnlyOne: FirstAndLastNames = {first: "Sappho" };
 
 
-                
+
           /*   ##########################################   */ 
           /*   ####### excess property checks ###########   */
           /*   ##########################################   */
@@ -176,3 +176,20 @@ as Poet has no property name activity */
            Providing an existing object literal bypasses excess property checks.
 
     */
+
+
+        /*   ######  Nested Object Types  ####### */
+
+    type Poem = {
+        author: {firstName:string; lastName:string};//obj as property(obj inside obj)
+        name: string;
+        };
+
+    const poemMatch: Poem = {
+        author: {
+        firstName: "Sylvia",
+        lastName: "Plath",
+        },
+        name: "Lady Lazarus",
+        
+        }
