@@ -37,6 +37,8 @@ poet.name; // Type: string
     type '{ name: string; start: number; }'.
 */
 
+
+/*          Objects with Type defined  */
 let poetLater: {born: number;name: string;};// Ok
     poetLater= {born: 1935  ,name: "Mary Oliver"};
 /*         poetLater = "Sappho";
